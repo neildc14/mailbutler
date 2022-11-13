@@ -16,6 +16,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Nav from "./layouts/Nav";
 import Mailbutler from "../icons/Mailbutler";
+import CTA from "./buttons/CTA";
 
 function MobileNav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -28,16 +29,7 @@ function MobileNav() {
         <Spacer />
         <Stack direction="row" spacing={4}>
           <Center>
-            <Button
-              as="a"
-              borderRadius="full"
-              bgColor="brand.primary"
-              color="white"
-              letterSpacing={2}
-              h={8}
-            >
-              Try for free
-            </Button>
+            <CTA caption="Try for free" />
             <Button p={0} variant="ghost" onClick={onOpen}>
               <HamburgerIcon w={8} h={8} />
             </Button>
