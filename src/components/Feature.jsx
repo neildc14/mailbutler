@@ -1,62 +1,50 @@
 import React from "react";
-import Ellipse14 from "../assets/images/Ellipse 14.png";
-import {
-  Box,
-  Image,
-  Heading,
-  Text,
-  IconButton,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Image, Heading, Text, Button } from "@chakra-ui/react";
 import { ArrowRightIcon } from "@chakra-ui/icons";
-import emailIcon from "../assets/images/email 1.png";
 
-function Feature() {
+function Feature({ background, icon, heading, text }) {
   return (
-    <Box>
+    <Box
+      sx={{
+        position: "relative",
+        height: "23rem",
+        width: "60rem",
+        backgroundImage: `url('${background}')`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        backgroundSize: "contain",
+      }}
+    >
       <Box
+        m="auto"
+        maxWidth="10rem"
+        position="absolute"
+        lineHeight="tall"
         sx={{
-          position: "relative",
-          height: "26rem",
-          width: "100%",
-          backgroundImage: `url('${Ellipse14}')`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-          backgroundSize: "contain",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
         }}
-        w={100}
       >
-        <Box
-          m="auto"
-          maxWidth="16rem"
-          position="absolute"
-          lineHeight="tall"
-          sx={{
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
+        <Image src={icon} mx="auto" mb={4} boxSize="3rem" />
+        <Heading as="h3" mb={2} fontSize="2xl" textAlign="center">
+          {heading}
+        </Heading>
+        <Text fontSize="base">{text}</Text>
+        <Button
+          as="a"
+          variant="ghost"
+          mt={2}
+          p={0}
+          gap={2}
+          fontSize="sm"
+          _active={{ bg: "none" }}
+          _hover={{ bg: "none" }}
+          aria-label="read more"
+          rightIcon={<ArrowRightIcon />}
         >
-          <Image src={emailIcon} mx="auto" mb={10} />
-          <Heading as="h3" mb={4} fontSize="2xl" textAlign="center">
-            Email Tracking
-          </Heading>
-          <Text fontSize="lg">
-            Track opened Emails or links inside of them and get notified when
-            your emails are opened
-          </Text>
-          <Button
-            variant="ghost"
-            mt={4}
-            p={0}
-            gap={2}
-            _active={{ bg: "none" }}
-            _hover={{ bg: "none" }}
-            rightIcon={<ArrowRightIcon />}
-          >
-            Read More
-          </Button>
-        </Box>
+          Read More
+        </Button>
       </Box>
     </Box>
   );
