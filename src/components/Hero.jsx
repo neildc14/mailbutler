@@ -17,7 +17,7 @@ import hero_bg from "../assets/images/hero_bg.png";
 function Hero() {
   return (
     <React.Fragment>
-      <Box mt={10} position="relative">
+      <Box mt={10}>
         <Box px={8}>
           <HeroHeading />
           <HeroMailings />
@@ -30,7 +30,7 @@ function Hero() {
 
 function HeroHeading() {
   return (
-    <Box>
+    <Box as="section">
       <Heading as="h1" size="xl" mb={4} fontWeight="400">
         <Text as="b" textTransform="uppercase" fontWeight="extrabold">
           Enhance your
@@ -43,7 +43,7 @@ function HeroHeading() {
 
 function HeroMailings() {
   return (
-    <Box>
+    <Box as="section">
       <Text as="p">For your current Email client</Text>
       <Box mt={4}>
         <Stack direction="row" spacing={8} _hover={{ bg: "none" }}>
@@ -76,12 +76,12 @@ function HeroMailings() {
 function HeroImage() {
   return (
     <Box
-      h="50vh"
+      as="section"
       pb={10}
       mb={10}
       sx={{
         background: "#FEFEFE",
-        borderRadius: "30% 70% 39% 61% / 55% 87% 13% 45% ",
+        borderRadius: "61% / 55% 87% 13% 45% ",
         boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.1)",
       }}
     >
