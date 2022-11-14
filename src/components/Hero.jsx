@@ -31,7 +31,13 @@ function Hero() {
 function HeroHeading() {
   return (
     <Box as="section">
-      <Heading as="h1" size="xl" mb={4} fontWeight="400">
+      <Heading
+        as="h1"
+        size="xl"
+        mb={4}
+        fontWeight="400"
+        fontSize={{ base: "3xl", lg: "2.6rem" }}
+      >
         <Text as="b" textTransform="uppercase" fontWeight="extrabold">
           Enhance your
         </Text>{" "}
@@ -81,7 +87,7 @@ function HeroImage() {
       mb={10}
       sx={{
         background: "#FEFEFE",
-        borderRadius: "61% / 55% 87% 13% 45% ",
+        borderRadius: "61% / 0 0 13% 45% ",
         boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.1)",
       }}
     >
