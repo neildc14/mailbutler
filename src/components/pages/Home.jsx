@@ -6,6 +6,7 @@ import Hero from "../Hero";
 import Reviews from "../Reviews";
 import FeatureHeading from "../SecondHeading";
 import MainFeatures from "../MainFeatures";
+import CardFeatures from "../CardFeatures";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Reviews />
       <FeatureHeading />
       <MainFeatures />
+      <CardFeatures />
     </Container>
   );
 }

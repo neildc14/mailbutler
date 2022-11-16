@@ -3,7 +3,7 @@ import { Container, Heading, Text } from "@chakra-ui/react";
 function FeatureHeading() {
   return (
     <Container as="section" px={8} mt={8} textAlign="center">
-      <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }}>
+      <Heading as="h2" fontSize={{ base: "2xl", lg: "2xl" }}>
         No need to learn something new
       </Heading>
       <Text pt={4} fontSize={{ base: "sm" }}>

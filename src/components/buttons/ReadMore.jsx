@@ -8,7 +8,7 @@ function ReadMoreBtn() {
       display="inline-block"
       as="a"
       variant="ghost"
-      mt={2}
+      mt={4}
       p={0}
       gap={2}
       fontSize="sm"

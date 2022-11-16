@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Nav from "./layouts/Nav";
-import Mailbutler from "../icons/Mailbutler";
+import Mailbutler from "../components/Mailbutler";
 import CTA from "./buttons/CTA";
 
 function MobileNav() {
