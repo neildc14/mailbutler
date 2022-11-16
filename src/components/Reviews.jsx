@@ -8,7 +8,7 @@ import GDPR from "../assets/images/GDPR-badge.png";
 
 function Reviews() {
   return (
-    <Container as="section" px={8}>
+    <Container as="section" px={8} height="auto">
       <Flex flexDirection={{ base: "column", md: "row" }}>
         <Reviewer img={GoogleChrome} store="Chrome Webstore" />
         <Reviewer img={AppStore} store="MAC Appstore" />

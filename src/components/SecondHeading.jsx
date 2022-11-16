@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Heading, Text } from "@chakra-ui/react";
-function SecondHeading() {
+function FeatureHeading() {
   return (
-    <Container as="section" px={8} textAlign="center">
+    <Container as="section" px={8} mt={8} textAlign="center">
       <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }}>
         No need to learn something new
       </Heading>
@@ -14,4 +14,4 @@ function SecondHeading() {
   );
 }
 
-export default SecondHeading;
+export default FeatureHeading;

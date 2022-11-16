@@ -1,37 +1,39 @@
 import React from "react";
-import { Box, Image, Heading, Text, Button } from "@chakra-ui/react";
-import { ArrowRightIcon } from "@chakra-ui/icons";
+import { Box, Image, Heading, Text, Button, Flex } from "@chakra-ui/react";
 
 function Feature({ background, icon, heading, text }) {
   return (
-    <Box
-      sx={{
-        position: "relative",
-        height: "23rem",
-        width: "60rem",
-        backgroundImage: `url('${background}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-        backgroundSize: "contain",
-      }}
-    >
+    <Box>
       <Box
-        m="auto"
-        maxWidth="10rem"
-        position="absolute"
-        lineHeight="tall"
         sx={{
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
+          display: "inline-block",
+          position: "relative",
+          height: "8rem",
+          width: "4rem",
+          backgroundImage: `url('${background}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center center",
+          backgroundSize: "contain",
+          transition: "transform .2s",
         }}
       >
-        <Image src={icon} mx="auto" mb={4} boxSize="3rem" />
-        <Heading as="h3" mb={2} fontSize="2xl" textAlign="center">
+        <Box
+          m="auto"
+          width="70%"
+          position="absolute"
+          lineHeight="base"
+          sx={{
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          <Image src={icon} mx="auto" mb={4} boxSize="2rem" />
+          {/* <Heading as="h3" mb={2} fontSize="2xl" textAlign="center">
           {heading}
         </Heading>
-        <Text fontSize="base">{text}</Text>
-        <Button
+        <Text fontSize="base">{text}</Text> */}
+          {/* <Button
           as="a"
           variant="ghost"
           mt={2}
@@ -44,7 +46,8 @@ function Feature({ background, icon, heading, text }) {
           rightIcon={<ArrowRightIcon />}
         >
           Read More
-        </Button>
+        </Button> */}
+        </Box>
       </Box>
     </Box>
   );
