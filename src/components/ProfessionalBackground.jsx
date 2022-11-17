@@ -6,6 +6,7 @@ function ProfessionalBackground({ profile, name, position, story, bg_color }) {
   return (
     <Box
       mt={12}
+      mb={4}
       mx="auto"
       maxWidth="xs"
       borderRadius="2xl"

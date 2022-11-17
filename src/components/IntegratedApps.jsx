@@ -3,7 +3,6 @@ import {
   Container,
   SimpleGrid,
   Image,
-  Divider,
   Heading,
   Flex,
   Box,
@@ -21,8 +20,12 @@ import CTA from "./buttons/CTA";
 
 function IntegratedApps() {
   return (
-    <Container as="section" px={8} pt={8}>
-      <Divider orientation="horizontal" my={4} bgColor="gray.800" />
+    <Container
+      as="section"
+      px={8}
+      py={8}
+      sx={{ borderTop: "1px solid gray", borderBottom: "1px solid gray" }}
+    >
       <SimpleGrid minChildWidth="120px" spacing="10px">
         <Image src={evernote} w={120} />
         <Image src={todoist} w={120} />
@@ -57,7 +60,6 @@ function IntegratedApps() {
           />
         </Box>
       </Flex>
-      <Divider orientation="horizontal" my={4} bgColor="gray.800" />
     </Container>
   );
 }

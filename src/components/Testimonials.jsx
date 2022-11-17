@@ -8,7 +8,7 @@ import LemioneProfile from "../assets/images/Avatar-12.png";
 
 function Testimonials() {
   return (
-    <Container as="section" pt={8} px={8}>
+    <Container as="section" py={8} px={8}>
       <Flex flexDirection="column">
         <PerksLiviu />
         <ProfessionalBackground
