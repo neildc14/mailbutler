@@ -11,6 +11,8 @@ function ProfessionalBackground({ profile, name, position, story, bg_color }) {
       borderRadius="2xl"
       bg={bg_color}
       position="relative"
+      boxShadow=" 20px 20px 60px #d9d9d9,
+             -20px -20px 60px #e7e7e7"
     >
       <Flex flexDirection="column" justifyContent="center" alignItems="center">
         <Image

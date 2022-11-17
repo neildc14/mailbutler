@@ -14,12 +14,12 @@ function Home() {
   return (
     <Container px={0} width="100%">
       <Header />
-      {/* <Hero />
+      <Hero />
       <Reviews />
       <FeatureHeading />
       <MainFeatures />
       <CardFeatures />
-      <TrustedBy /> */}
+      <TrustedBy />
       <Testimonials />
     </Container>
   );
