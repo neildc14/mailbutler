@@ -22,7 +22,7 @@ function Testimonials() {
           bg_color="#96CEBC"
         />
       </Flex>
-      <Divider orientation="horizontal" p={4} height="1rem" />
+      <Divider orientation="horizontal" my={4} bgColor="gray.800" />
       <Flex flexDirection="column">
         <PerksLemione />
         <ProfessionalBackground
