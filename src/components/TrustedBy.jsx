@@ -13,7 +13,7 @@ function TrustedBy() {
         Trusted By
       </Heading>
       <SimpleGrid minChildWidth="120px" spacing="10px">
-        <Image src={ably} w={120} />
+        <Image src={ably}    />
         <Image src={docz} w={120} />
         <Image src={appoptics} w={120} />
         <Image src={getform} w={120} />
