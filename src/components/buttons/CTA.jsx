@@ -3,7 +3,6 @@ import { Link, Button, Center } from "@chakra-ui/react";
 
 function CTA({
   caption,
-
   size = "sm",
   variant = "solid",
   borderColor = "brand.primary",
