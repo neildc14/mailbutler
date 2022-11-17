@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Box,
-  Heading,
-  Flex,
-  SimpleGrid,
-  Image,
-} from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid, Image } from "@chakra-ui/react";
 import ably from "../assets/icons/ablyio-ar21 1.png";
 import docz from "../assets/icons/doczsite-ar21 1 (1).png";
 import appoptics from "../assets/icons/appoptics-ar21 1.png";
@@ -20,11 +13,11 @@ function TrustedBy() {
         Trusted By
       </Heading>
       <SimpleGrid minChildWidth="120px" spacing="10px">
-        <Image src={ably} />
-        <Image src={docz} />
-        <Image src={appoptics} />
-        <Image src={getform} />
-        <Image src={unito} />
+        <Image src={ably} w={120} />
+        <Image src={docz} w={120} />
+        <Image src={appoptics} w={120} />
+        <Image src={getform} w={120} />
+        <Image src={unito} w={120} />
       </SimpleGrid>
     </Container>
   );

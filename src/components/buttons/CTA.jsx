@@ -1,21 +1,34 @@
 import React from "react";
-import { Link, Button } from "@chakra-ui/react";
+import { Link, Button, Center } from "@chakra-ui/react";
 
-function CTA({ caption, height = 8, px = 4 }) {
+function CTA({
+  caption,
+
+  size = "sm",
+  variant = "solid",
+  borderColor = "brand.primary",
+  bgColor = "brand.primary",
+  hoverBgColor = "blue.700",
+  textColor = "white",
+  hoverTextColor = "white",
+}) {
   return (
     <Button
       as="a"
-      h={height}
-      px={px}
+      variant={variant}
+      px={6}
+      py={4}
+      size={size}
       borderRadius="full"
-      bgColor="brand.primary"
-      _hover={{ bgColor: "blue.700" }}
+      bgColor={bgColor}
+      _hover={{ bgColor: hoverBgColor, color: hoverTextColor }}
       cursor="pointer"
-      color="white"
+      borderColor={borderColor}
+      color={textColor}
       letterSpacing={2}
-      aria-label="Click try for free"
+      aria-label="Click button"
     >
-      {caption}
+      <Center> {caption}</Center>
     </Button>
   );
 }
