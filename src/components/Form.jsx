@@ -4,7 +4,7 @@ import CTA from "../components/buttons/CTA";
 import {
   Box,
   Flex,
-  Stack,
+  HStack,
   FormControl,
   FormLabel,
   RadioGroup,
@@ -21,9 +21,10 @@ import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 function Form() {
   const [workEmail, bindWorkEmail] = useChangeInput("");
   const [password, bindPassword] = useChangeInput("");
+  const [value, setValue] = useState("gmail");
   const [show, setShow] = useState(false);
 
-  const handleClick = () => setShow(!show);
+  const showPassword = () => setShow(!show);
 
   return (
     <Box as="form" pt={6}>
@@ -39,21 +40,27 @@ function Form() {
       </FormControl>
       <FormControl pb={6}>
         <FormLabel fontWeight="bold">Email application</FormLabel>
-        <RadioGroup>
-          <Stack direction="row" spacing={4}>
-            <Radio bg="white">Apple Mail</Radio>
-            <Radio bg="white">Outlook</Radio>
-            <Radio bg="white">Gmail</Radio>
-          </Stack>
+        <RadioGroup name="email_app" value={value} onChange={setValue}>
+          <HStack direction="row" spacing={4}>
+            <Radio bg="white" value="apple mail">
+              Apple Mail
+            </Radio>
+            <Radio bg="white" value="outlook">
+              Outlook
+            </Radio>
+            <Radio bg="white" value="gmail">
+              Gmail
+            </Radio>
+          </HStack>
         </RadioGroup>
       </FormControl>
       <FormControl pb={6}>
         <FormLabel fontWeight="bold">Password</FormLabel>
         <InputGroup>
           <Input
+            type={show ? "text" : "password"}
             aria-label="input your password"
             borderRadius="full"
-            type={show ? "text" : "password"}
             bg="white"
             {...bindPassword}
           />
@@ -61,23 +68,26 @@ function Form() {
             <IconButton
               size="lg"
               variant="ghost"
+              _hover={{ padding: 0 }}
+              _active={{ padding: 0 }}
               icon={show ? <ViewOffIcon /> : <ViewIcon />}
-              onClick={handleClick}
+              onClick={showPassword}
             />
           </InputRightElement>
         </InputGroup>
       </FormControl>
       <FormControl pb={6}>
-        <Stack direction="row" spacing={2}>
-          <Checkbox type="checkbox" defaultChecked />
+        <HStack spacing={2}>
+          <Checkbox type="checkbox" />
           <Link textDecoration="underline">Accept Term and Privacy Policy</Link>
-        </Stack>
+        </HStack>
       </FormControl>
       <Flex justifyContent="center">
         <CTA
           caption="Sign Up for Free Trial"
           bgColor="#51A387"
           as="button"
+          type="submit"
           size="md"
         />
       </Flex>

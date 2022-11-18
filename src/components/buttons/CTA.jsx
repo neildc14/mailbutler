@@ -3,6 +3,7 @@ import { Link, Button, Center } from "@chakra-ui/react";
 
 function CTA({
   as = "a",
+  type = "",
   caption,
   size = "sm",
   variant = "solid",
@@ -15,6 +16,7 @@ function CTA({
   return (
     <Button
       as={as}
+      type={type}
       variant={variant}
       px={6}
       py={4}

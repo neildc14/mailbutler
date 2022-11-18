@@ -21,9 +21,9 @@ function Home() {
       <FeatureHeading />
       <MainFeatures />
       <CardFeatures />
-      <TrustedBy /> */}
-      {/* <Testimonials /> */}
-      {/* <IntegratedApps /> */}
+      <TrustedBy />
+      <Testimonials />
+      <IntegratedApps /> */}
       <RegisterSection />
     </Container>
   );
