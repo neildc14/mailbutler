@@ -10,6 +10,7 @@ import CardFeatures from "../CardFeatures";
 import TrustedBy from "../TrustedBy";
 import Testimonials from "../Testimonials";
 import IntegratedApps from "../IntegratedApps";
+import RegisterSection from "../RegisterSection";
 
 function Home() {
   return (
@@ -21,8 +22,9 @@ function Home() {
       <MainFeatures />
       <CardFeatures />
       <TrustedBy /> */}
-      <Testimonials />
-      <IntegratedApps />
+      {/* <Testimonials /> */}
+      {/* <IntegratedApps /> */}
+      <RegisterSection />
     </Container>
   );
 }
