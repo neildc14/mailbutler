@@ -5,7 +5,7 @@ import { cardDetails } from "../data/cardDetails";
 
 function CardFeatures() {
   return (
-    <Container as="section" px={8} pt={8}>
+    <Container as="section" maxW="container.xl" px={8} pt={8}>
       <Flex flexDirection="column" gap={6}>
         {cardDetails?.map((card, i) => (
           <CardFeature

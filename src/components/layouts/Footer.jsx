@@ -8,7 +8,7 @@ import FooterCopyright from "../FooterCopyright";
 
 function Footer() {
   return (
-    <Container as="section" px={0}>
+    <Container as="section" maxW="container.xl" px={0}>
       <Box px={8} pt={8}>
         <Box mt={8}>
           <FooterSocmed />

@@ -15,9 +15,9 @@ import Footer from "../layouts/Footer";
 
 function Home() {
   return (
-    <Container px={0} width="100%" height="100vh">
+    <Container px={0} width="100%" maxW="container.xl" height="100vh">
       <Header />
-      {/* <Hero />
+      <Hero />
       <Reviews />
       <FeatureHeading />
       <MainFeatures />
@@ -25,7 +25,7 @@ function Home() {
       <TrustedBy />
       <Testimonials />
       <IntegratedApps />
-      <RegisterSection /> */}
+      <RegisterSection />
       <Footer />
     </Container>
   );

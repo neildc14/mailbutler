@@ -22,6 +22,7 @@ function IntegratedApps() {
   return (
     <Container
       as="section"
+      maxW="container.xl"
       px={8}
       py={8}
       sx={{ borderTop: "1px solid gray", borderBottom: "1px solid gray" }}
