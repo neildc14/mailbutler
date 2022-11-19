@@ -13,7 +13,6 @@ function FoooterNav({ heading, links }) {
           width: "4.5rem",
           display: "block",
         }}
-        _hover={{ "::after": '  width: "5.5rem",' }}
         fontSize="xl"
         letterSpacing="widest"
       >

@@ -16,8 +16,8 @@ import Footer from "../layouts/Footer";
 function Home() {
   return (
     <Container px={0} width="100%" height="100vh">
-      {/* <Header />
-      <Hero />
+      <Header />
+      {/* <Hero />
       <Reviews />
       <FeatureHeading />
       <MainFeatures />

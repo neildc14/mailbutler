@@ -12,12 +12,11 @@ function FooterCopyright() {
         <Text>Privacy Policy</Text>
       </Stack>
       <Stack direction="row" alignItems="center">
-        <Link width="50%" maxWidth="400px">
-          <Image src={appstore} height="3rem" />
-        </Link>
-        <Link width="50%" maxWidth="400px">
-          <Image src={googleplay} height="3rem" />
-        </Link>
+        {[appstore, googleplay].map((app) => (
+          <Link key={app} width="50%" maxWidth="400px">
+            <Image src={app} height="3rem" />
+          </Link>
+        ))}
       </Stack>
     </Box>
   );
