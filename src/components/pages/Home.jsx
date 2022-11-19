@@ -11,20 +11,22 @@ import TrustedBy from "../TrustedBy";
 import Testimonials from "../Testimonials";
 import IntegratedApps from "../IntegratedApps";
 import RegisterSection from "../RegisterSection";
+import Footer from "../layouts/Footer";
 
 function Home() {
   return (
-    <Container px={0} width="100%">
-      <Header />
-      {/* <Hero />
+    <Container px={0} width="100%" height="100vh">
+      {/* <Header />
+      <Hero />
       <Reviews />
       <FeatureHeading />
       <MainFeatures />
       <CardFeatures />
       <TrustedBy />
       <Testimonials />
-      <IntegratedApps /> */}
-      <RegisterSection />
+      <IntegratedApps />
+      <RegisterSection /> */}
+      <Footer />
     </Container>
   );
 }
