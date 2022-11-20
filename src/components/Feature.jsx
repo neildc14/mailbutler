@@ -32,7 +32,7 @@ function Feature({ background, icon, heading, text }) {
             mb={4}
             boxSize={{ md: "2rem", lg: "3rem" }}
           />
-          <Heading as="h3" mb={2} fontSize={{ lg: "xl" }}>
+          <Heading as="h3" mb={2} fontSize={{ lg: "lg" }}>
             {heading}
           </Heading>
           <Text fontSize={{ lg: "sm" }}>{text}</Text>
