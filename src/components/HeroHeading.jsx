@@ -3,7 +3,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 export default function HeroHeading() {
   return (
-    <Box as="section">
+    <Box as="section" mt={{ base: 0, lg: 20 }}>
       <Heading
         as="h1"
         size="xl"
