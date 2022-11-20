@@ -4,7 +4,7 @@ import MobileNav from "../MobileNav";
 
 function Header() {
   return (
-    <Container as="header" maxW="container.xl" px={8}>
+    <Container as="header" maxW="container.full" px={8}>
       <Box h={20} pt={4}>
         <MobileNav />
       </Box>
