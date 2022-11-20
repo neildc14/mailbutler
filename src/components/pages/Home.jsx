@@ -22,8 +22,8 @@ function Home() {
       <FeatureHeading />
       <MainFeatures />
       <CardFeatures />
-      {/* <TrustedBy />
-      <Testimonials />
+      <TrustedBy />
+      {/* <Testimonials />
       <IntegratedApps />
       <RegisterSection />
       <Footer /> */}
