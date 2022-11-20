@@ -10,6 +10,7 @@ function Hero() {
       <Box
         mx="auto"
         mt={{ base: 10, md: 5, lg: 0 }}
+        mb={{ lg: 8 }}
         sx={{
           background: "#FEFEFE",
           borderRadius: "61% / 0 0 0 45% ",

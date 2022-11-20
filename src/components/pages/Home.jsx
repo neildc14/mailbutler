@@ -19,9 +19,9 @@ function Home() {
       <Header />
       <Hero />
       <Reviews />
-      {/* <FeatureHeading />
+      <FeatureHeading />
       <MainFeatures />
-      <CardFeatures />
+      {/* <CardFeatures />
       <TrustedBy />
       <Testimonials />
       <IntegratedApps />

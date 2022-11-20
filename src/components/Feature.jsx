@@ -1,15 +1,13 @@
 import React from "react";
-import { Box, Image, Heading, Text, Button, Flex } from "@chakra-ui/react";
+import { Box, Image, Heading, Text, AspectRatio } from "@chakra-ui/react";
+import ReadMoreBtn from "./buttons/ReadMore";
 
 function Feature({ background, icon, heading, text }) {
   return (
-    <Box>
+    <AspectRatio ratio={1} maxW="20rem" mx="auto">
       <Box
         sx={{
-          display: "inline-block",
           position: "relative",
-          height: "8rem",
-          width: "4rem",
           backgroundImage: `url('${background}')`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
@@ -19,7 +17,7 @@ function Feature({ background, icon, heading, text }) {
       >
         <Box
           m="auto"
-          width="70%"
+          width="50%"
           position="absolute"
           lineHeight="base"
           sx={{
@@ -28,28 +26,20 @@ function Feature({ background, icon, heading, text }) {
             transform: "translate(-50%, -50%)",
           }}
         >
-          <Image src={icon} mx="auto" mb={4} boxSize="2rem" />
-          {/* <Heading as="h3" mb={2} fontSize="2xl" textAlign="center">
-          {heading}
-        </Heading>
-        <Text fontSize="base">{text}</Text> */}
-          {/* <Button
-          as="a"
-          variant="ghost"
-          mt={2}
-          p={0}
-          gap={2}
-          fontSize="sm"
-          _active={{ bg: "none" }}
-          _hover={{ bg: "none" }}
-          aria-label="read more"
-          rightIcon={<ArrowRightIcon />}
-        >
-          Read More
-        </Button> */}
+          <Image
+            src={icon}
+            mx="auto"
+            mb={4}
+            boxSize={{ md: "2rem", lg: "3rem" }}
+          />
+          <Heading as="h3" mb={2} fontSize={{ lg: "xl" }}>
+            {heading}
+          </Heading>
+          <Text fontSize={{ lg: "sm" }}>{text}</Text>
+          <ReadMoreBtn />
         </Box>
       </Box>
-    </Box>
+    </AspectRatio>
   );
 }
 

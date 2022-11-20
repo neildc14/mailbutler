@@ -14,6 +14,7 @@ function ReadMoreBtn() {
       fontSize="sm"
       _active={{ bg: "none" }}
       _hover={{ bg: "none" }}
+      cursor="pointer"
       aria-label="read more"
       rightIcon={<ArrowRightIcon />}
     >

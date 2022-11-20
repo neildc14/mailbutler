@@ -8,7 +8,7 @@ import GDPR from "../assets/images/GDPR-badge.png";
 
 function Reviews() {
   return (
-    <Container as="section" maxW="container.full" px={8} py={8} height="auto">
+    <Container as="section" maxW="container.full" px={8} pt={8} height="auto">
       <Flex
         flexDirection={{ base: "column", md: "row", lg: "row" }}
         justifyContent={{ md: "center", lg: "space-evenly" }}
