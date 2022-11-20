@@ -8,11 +8,11 @@ import GDPR from "../assets/images/GDPR-badge.png";
 
 function Reviews() {
   return (
-    <Container as="section" maxW="container.xl" px={8} height="auto">
+    <Container as="section" maxW="container.full" px={8} py={8} height="auto">
       <Flex
         flexDirection={{ base: "column", md: "row", lg: "row" }}
-        justifyContent={{ md: "center", lg: "center" }}
-        gap={{ md: "8" }}
+        justifyContent={{ md: "center", lg: "space-evenly" }}
+        gap={{ md: 8, lg: 10 }}
       >
         <Reviewer img={GoogleChrome} store="Chrome Webstore" />
         <Reviewer img={AppStore} store="MAC Appstore" />

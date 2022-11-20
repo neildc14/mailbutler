@@ -8,7 +8,9 @@ import { Box, Text, Stack, Link, Image } from "@chakra-ui/react";
 export default function HeroMailings() {
   return (
     <Box as="section">
-      <Text as="p">For your current Email client</Text>
+      <Text as="p" fontSize="sm">
+        For your current Email client
+      </Text>
       <Box mt={4}>
         <Stack direction="row" spacing={8} _hover={{ bg: "none" }}>
           <Link p={0} aria-label="Click to open outlook account">
@@ -29,7 +31,9 @@ export default function HeroMailings() {
             alignItems="center"
           >
             <CTA caption="Try 14 days for Free" height={10} px={8} />
-            <Text as="p">No credit card required</Text>
+            <Text as="p" fontSize={{ base: "sm", md: "sm", lg: "xs" }}>
+              No credit card required
+            </Text>
           </Stack>
         </Box>
       </Box>

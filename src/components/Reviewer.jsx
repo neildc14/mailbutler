@@ -9,7 +9,12 @@ function Reviewer({ img, store }) {
       <Image src={img} boxSize="3rem" />
       <Flex flexDirection="column">
         <Image src={star} w={12} h={4} />
-        <Text as="u" fontSize="md" fontWeight="bold" letterSpacing="1px">
+        <Text
+          as="u"
+          fontSize={{ base: "md", md: "sm", lg: "xs" }}
+          fontWeight="bold"
+          letterSpacing="1px"
+        >
           {store}
         </Text>
       </Flex>

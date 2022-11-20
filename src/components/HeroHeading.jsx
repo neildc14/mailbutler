@@ -4,13 +4,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 export default function HeroHeading() {
   return (
     <Box as="section" mt={{ base: 0, lg: 20 }}>
-      <Heading
-        as="h1"
-        size="xl"
-        mb={4}
-        fontWeight="400"
-        fontSize={{ base: "3xl", lg: "2.6rem" }}
-      >
+      <Heading as="h1" size="xl" mb={4} fontWeight="400" fontSize="3xl">
         <Text as="b" textTransform="uppercase" fontWeight="extrabold">
           Enhance your
         </Text>{" "}

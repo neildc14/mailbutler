@@ -18,8 +18,8 @@ function Home() {
     <Container width="100%" maxW="container.full" height="100vh" mx={0} px={0}>
       <Header />
       <Hero />
-      {/* <Reviews />
-      <FeatureHeading />
+      <Reviews />
+      {/* <FeatureHeading />
       <MainFeatures />
       <CardFeatures />
       <TrustedBy />
