@@ -4,8 +4,8 @@ function FeatureHeading() {
   return (
     <Container
       as="section"
-      maxW="container.xl"
-      px={8}
+      maxW="container.full"
+      px={{ base: 8, lg: 16 }}
       mt={8}
       textAlign="center"
     >

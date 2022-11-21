@@ -11,7 +11,12 @@ import ellipse10 from "../assets/images/Ellipse 10.png";
 function Testimonials() {
   const [isLargerThan992] = useMediaQuery("(min-width: 992px)");
   return (
-    <Container as="section" maxW="container.xl" py={8} px={8}>
+    <Container
+      as="section"
+      maxW="container.full"
+      py={8}
+      px={{ base: 8, lg: 16 }}
+    >
       <Flex flexDirection={{ base: "column", md: "row", lg: "row" }} gap={10}>
         <Box width="100%" alignSelf={{ md: "center", lg: "start" }}>
           <PerksLiviu />

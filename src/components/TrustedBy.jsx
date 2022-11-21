@@ -8,7 +8,12 @@ import unito from "../assets/icons/unito-ar21 1.png";
 
 function TrustedBy() {
   return (
-    <Container as="section" maxW="container.full" pt={16} px={8}>
+    <Container
+      as="section"
+      maxW="container.full"
+      pt={16}
+      px={{ base: 8, lg: 16 }}
+    >
       <Heading as="h2" pb={8} textAlign="center" fontSize="2xl">
         Trusted By
       </Heading>

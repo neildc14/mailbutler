@@ -10,7 +10,7 @@ import FooterCompany from "../FooterCompany";
 function Footer() {
   return (
     <Container as="section" maxW="container.full" px={0} bgColor="#a5d5c866">
-      <Box px={8} pt={8}>
+      <Box px={{ base: 8, lg: 16 }} pt={8}>
         <Box mt={8}>
           <Flex
             flexDirection={{ base: "column", md: "row", lg: "row" }}

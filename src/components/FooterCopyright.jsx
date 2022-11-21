@@ -1,12 +1,15 @@
 import React from "react";
-import { Box, Text, Stack, Image, Link, Flex } from "@chakra-ui/react";
-import appstore from "../assets/icons/appStore.png";
-import googleplay from "../assets/icons/google-play-badge 1 (1).png";
+import { Box, Text, Flex } from "@chakra-ui/react";
 import FooterRight from "./FooterRight";
 
 function FooterCopyright() {
   return (
-    <Box py={{ sm: 10, md: 2 }} px={8} bgColor="#464646" color="white">
+    <Box
+      py={{ sm: 10, md: 2 }}
+      px={{ base: 8, lg: 16 }}
+      bgColor="#464646"
+      color="white"
+    >
       <Flex
         flexDirection={{ base: "column", md: "row", lg: "row" }}
         alignItems={{ md: "end" }}

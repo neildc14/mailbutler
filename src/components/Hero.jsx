@@ -24,7 +24,7 @@ function Hero() {
             lg: "40% 60%",
           }}
         >
-          <GridItem px={10}>
+          <GridItem pe={{ base: 8 }} ps={{ base: 8, lg: 16 }}>
             <HeroHeading />
             <HeroMailings />
           </GridItem>

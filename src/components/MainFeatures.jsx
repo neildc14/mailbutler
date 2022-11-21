@@ -14,7 +14,12 @@ function MainFeatures() {
   const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
 
   return (
-    <Container as="section" maxW="container.full" px={8} pt={8}>
+    <Container
+      as="section"
+      maxW="container.full"
+      px={{ base: 8, lg: 16 }}
+      pt={8}
+    >
       {!isLargerThan800 && (
         <Flex flexDirection="column" justifyContent="space-between">
           {featureDetails?.map((feature, i) => (
