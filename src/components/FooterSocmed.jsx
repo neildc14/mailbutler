@@ -6,7 +6,7 @@ import SocialMediaButton from "./buttons/SocialMediaButton";
 
 function FooterSocmed() {
   return (
-    <Box mb={8}>
+    <Box mb={8} maxWidth={{ lg: "25%" }}>
       <Box mb={4}>
         <Mailbutler />
       </Box>

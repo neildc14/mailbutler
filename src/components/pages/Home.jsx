@@ -17,16 +17,16 @@ function Home() {
   return (
     <Container width="100%" maxW="container.full" height="100vh" mx={0} px={0}>
       <Header />
-      {/* <Hero />
+      <Hero />
       <Reviews />
       <FeatureHeading />
       <MainFeatures />
       <CardFeatures />
       <TrustedBy />
-      <Testimonials /> */}
+      <Testimonials />
       <IntegratedApps />
       <RegisterSection />
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 }

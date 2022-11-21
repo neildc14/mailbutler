@@ -1,20 +1,28 @@
 import React from "react";
-import { Container, Box } from "@chakra-ui/react";
+import { Container, Box, Flex, SimpleGrid } from "@chakra-ui/react";
 import FooterSocmed from "../FooterSocmed";
 import FooterFeatures from "../FooterFeatures";
 import FooterProduct from "../FooterProduct";
 import FooterResources from "../FooterResources";
 import FooterCopyright from "../FooterCopyright";
+import FooterCompany from "../FooterCompany";
 
 function Footer() {
   return (
-    <Container as="section" maxW="container.xl" px={0}>
+    <Container as="section" maxW="container.full" px={0} bgColor="#a5d5c866">
       <Box px={8} pt={8}>
         <Box mt={8}>
-          <FooterSocmed />
-          <FooterFeatures />
-          <FooterProduct />
-          <FooterResources />
+          <Flex
+            flexDirection={{ base: "column", md: "row", lg: "row" }}
+            justifyContent={{ lg: "space-evenly" }}
+            gap={4}
+          >
+            <FooterSocmed />
+            <FooterFeatures />
+            <FooterProduct />
+            <FooterResources />
+            <FooterCompany />
+          </Flex>
         </Box>
       </Box>
       <FooterCopyright />

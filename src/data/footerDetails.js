@@ -29,3 +29,11 @@ export const resources = [
   "Partner Program",
   " Google API Service Usage Disclosure",
 ];
+
+export const company = [
+  "About Us",
+  "Jobs- We are hiring!",
+  "Press & Media",
+  "Release Notes",
+  "Term of Use",
+];
