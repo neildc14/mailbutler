@@ -13,7 +13,7 @@ function Testimonials() {
   return (
     <Container as="section" maxW="container.xl" py={8} px={8}>
       <Flex flexDirection={{ base: "column", md: "row", lg: "row" }} gap={10}>
-        <Box width="100%">
+        <Box width="100%" alignSelf={{ md: "center", lg: "start" }}>
           <PerksLiviu />
         </Box>
         {isLargerThan992 ? (
@@ -50,7 +50,9 @@ function Testimonials() {
         flexDirection={{ base: "column", md: "row-reverse", lg: "row-reverse" }}
         gap={10}
       >
-        <PerksLemione />
+        <Box width="100%" alignSelf={{ md: "center", lg: "start" }}>
+          <PerksLemione />
+        </Box>
         {isLargerThan992 ? (
           <DesktopProfessionalBackground
             profile={LemioneProfile}

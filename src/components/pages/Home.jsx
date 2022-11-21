@@ -24,8 +24,8 @@ function Home() {
       <CardFeatures />
       <TrustedBy /> */}
       <Testimonials />
-      {/* <IntegratedApps />
-      <RegisterSection />
+      <IntegratedApps />
+      {/* <RegisterSection />
       <Footer /> */}
     </Container>
   );
