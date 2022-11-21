@@ -28,15 +28,15 @@ function IntegratedApps() {
       sx={{ borderTop: "1px solid gray", borderBottom: "1px solid gray" }}
     >
       <SimpleGrid minChildWidth="120px" spacing="10px">
-        <Image src={evernote} w={120} />
-        <Image src={todoist} w={120} />
-        <Image src={asana} w={120} />
-        <Image src={meistertask} w={120} />
-        <Image src={microsofttodo} w={120} />
-        <Image src={googletask} w={120} />
-        <Image src={onenote} w={120} />
-        <Image src={slack} w={120} />
-        <Image src={trello} w={120} />
+        <Image src={evernote} w={120} m="auto" />
+        <Image src={todoist} w={120} m="auto" />
+        <Image src={asana} w={120} m="auto" />
+        <Image src={meistertask} w={120} m="auto" />
+        <Image src={microsofttodo} w={120} m="auto" />
+        <Image src={googletask} w={120} m="auto" />
+        <Image src={onenote} w={120} m="auto" />
+        <Image src={slack} w={120} m="auto" />
+        <Image src={trello} w={120} m="auto" />
       </SimpleGrid>
       <Flex
         flexDirection="column"

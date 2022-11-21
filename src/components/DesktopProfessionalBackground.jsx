@@ -27,6 +27,7 @@ function DesktopProfessionalBackground({
       bgColor={bg_color}
       sx={{
         borderRadius: "42% 58% 45% 59% / 31% 54% 51% 75% ",
+        boxShadow: " 5px 5px 10px #d9d9d9,-5px -5px 10px #e7e7e7",
       }}
     >
       <Flex flexDirection="row" gap={4} w="80%" mx="auto" pt={16} pb={4}>
