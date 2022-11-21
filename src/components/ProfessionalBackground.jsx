@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 import dots from "../assets/icons/dots.png";
+import LinkTo from "./LinkTo";
 
 function ProfessionalBackground({ profile, name, position, story, bg_color }) {
   return (
@@ -31,13 +32,12 @@ function ProfessionalBackground({ profile, name, position, story, bg_color }) {
           <Text pb={8} textAlign="justify">
             {story}
           </Text>
-          <Link
+          <LinkTo
             fontWeight="semibold"
-            _hover={{ texDecoration: "underline" }}
+            _hover={{ textDecoration: "underline" }}
             aria-label="read full story"
-          >
-            Read full story
-          </Link>
+            link_name="Read full story"
+          />
         </Box>
         <Image src={dots} pb={4} />
       </Flex>

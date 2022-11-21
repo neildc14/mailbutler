@@ -9,6 +9,7 @@ import {
   AspectRatio,
 } from "@chakra-ui/react";
 import dots from "../assets/icons/dots.png";
+import LinkTo from "./LinkTo";
 
 function DesktopProfessionalBackground({
   bgImage,
@@ -40,13 +41,12 @@ function DesktopProfessionalBackground({
           <Text pb={8} textAlign="justify" fontSize={{ base: "md", lg: "sm" }}>
             {story}
           </Text>
-          <Link
+          <LinkTo
             fontWeight="semibold"
-            _hover={{ texDecoration: "underline" }}
+            _hover={{ textDecoration: "underline" }}
             aria-label="read full story"
-          >
-            Read full story
-          </Link>
+            link_name="Read full story"
+          />
         </Box>
       </Flex>
       <Image src={dots} pb={4} mx="auto" />

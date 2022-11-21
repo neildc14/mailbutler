@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Button, Center } from "@chakra-ui/react";
+import { Button, Center } from "@chakra-ui/react";
 
 function CTA({
   as = "a",
