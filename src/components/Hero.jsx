@@ -10,7 +10,7 @@ function Hero() {
       <Box
         mx="auto"
         mt={{ base: 10, md: 5, lg: 0 }}
-        mb={{ lg: 8 }}
+        mb={{ lg: 12 }}
         sx={{
           background: "#FEFEFE",
           borderRadius: "61% / 0 0 0 45% ",
@@ -24,7 +24,7 @@ function Hero() {
             lg: "40% 60%",
           }}
         >
-          <GridItem px={8}>
+          <GridItem px={10}>
             <HeroHeading />
             <HeroMailings />
           </GridItem>

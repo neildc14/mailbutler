@@ -79,13 +79,19 @@ function Form() {
       <FormControl pb={6}>
         <HStack spacing={2}>
           <Checkbox type="checkbox" />
-          <Link textDecoration="underline">Accept Term and Privacy Policy</Link>
+          <Link
+            textDecoration="underline"
+            fontSize={{ base: "md", md: "md", lg: "sm" }}
+          >
+            Accept Term and Privacy Policy
+          </Link>
         </HStack>
       </FormControl>
       <Flex justifyContent="center">
         <CTA
           caption="Sign Up for Free Trial"
           bgColor="#51A387"
+          hoverBgColor="green.700"
           as="button"
           type="submit"
           size="md"
